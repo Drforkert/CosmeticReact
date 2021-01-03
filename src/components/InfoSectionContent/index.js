@@ -4,7 +4,7 @@ import { h1 } from './ContentOneElements';
 const ContentOne = () => {
     return (
         <>
-          <h1>Content One</h1>   
+          <h1>This is going to be page one "INFO" One</h1>   
         </>
     )
 }
