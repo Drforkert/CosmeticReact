@@ -1,0 +1,55 @@
+import ImageOne from '../../images/bg.jpg';
+import ImageTwo from '../../images/makeup.jpg';
+import ImageThree from '../../images/nailsservice.jpg';
+
+export const homeObjOne = {
+    id: "about",
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'etwas mehr über mich',
+    headline: 'Willkommen im Kosmetikstudio Kamin',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+    buttonLabel: 'Get started',
+    imgStart: false,
+    img: ImageOne,
+    alt: "Welcome",
+    dark: true,
+    primary: true,
+    darkText: false,
+    ButtonPath: "infocontentone",
+}
+export const homeObjTwo = {
+    id: "discover",
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Professionelles Make-Up',
+    headline: 'Ob für Hochzeiten oder andere Festlichkeiten',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+    buttonLabel: 'Learn more',
+    imgStart: true,
+    img: ImageTwo,
+    alt: "Welcome",
+    dark: true,
+    primary: true,
+    darkText: true,
+    ButtonPath: "infocontenttwo",
+}
+export const homeObjThree = {
+    id: "services",
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Jeden Monat ein neues Special',
+    headline: 'Diesen Monat haben wir das "XYZ" Angebot für sie angefertigt',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
+    buttonLabel: 'More Info',
+    imgStart: false,
+    img: ImageThree,
+    alt: "Welcome",
+    dark: true,
+    primary: true,
+    darkText: false,
+    ButtonPath: "infocontentthree",
+}
