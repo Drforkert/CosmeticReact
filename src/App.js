@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import SignInPage from './pages/signin';
 import ContentOne from './pages/infocontentone';
-import ContentTwo from './components/InfoSectionContent2';
-import ContentThree from './components/InfoSectionContent3';
+import ContentTwo from './pages/infocontenttwo';
+import ContentThree from './pages/infocontentthree';
 
 
 function App() {

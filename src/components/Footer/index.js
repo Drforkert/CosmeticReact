@@ -19,13 +19,13 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>Kamin © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
-             <SocialIconLink href="//www.Facebook.com" target="_blank" aria-label="Facebook">
+             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
               <FaFacebook />  
              </SocialIconLink>
-             <SocialIconLink href="//www.instagram.com" target="_blank" aria-label="Instagram">
+             <SocialIconLink href="/" target="_blank" aria-label="Instagram">
               <FaInstagram />  
              </SocialIconLink>
-             <SocialIconLink href="//www.twitter.com" target="_blank" aria-label="Twitter">
+             <SocialIconLink href="/" target="_blank" aria-label="Twitter">
               <FaTwitter />  
              </SocialIconLink>
             </SocialIcons>

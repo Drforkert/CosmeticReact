@@ -1,12 +1,13 @@
-import React from 'react'
-import ContentTwo from '../components/InfoSectionContent2'
+import React from 'react';
+import ContentTwo from '../components/InfoSectionContent2';
+import { infoObjOne } from '../components/InfoSectionContent2/ContentData';
 
 const infocontenttwo = () => {
     return (
         <>
-         <ContentTwo/>
+         <ContentTwo {...infoObjOne}/>
         </>
     )
 }
 
-export default infocontenttwo
+export default infocontenttwo;

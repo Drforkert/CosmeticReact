@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 
 export const FooterContainer = styled.footer`
-background: linear-gradient(to bottom, #42275a, #734b6d);
+background: black;
 `;
 
 export const FooterWrap = styled.div`

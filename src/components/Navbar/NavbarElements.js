@@ -19,7 +19,7 @@ export const NavAnimation = keyframes`
 
 
 export const Nav = styled.nav`
-background: ${({scrollNav}) => (scrollNav ? 'transparent' : 'transparent')};
+background: ${({scrollNav}) => (scrollNav ? '#000' : 'rgba(0,0,0,0.2)')};
 height: 80px;
 display: flex;
 background-size: 200% 200%;
@@ -97,7 +97,7 @@ height: 80px;
 export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
-font-size: 1.2rem;
+font-size: 1rem;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
@@ -105,8 +105,9 @@ height: 100%;
 cursor: pointer;
 
 &.active {
-    border-bottom: 5px solid #fff;
-    border-top: 5px solid #fff;
+    transition: all 0.2s ease-in;
+    border-bottom: 3px solid white;
+    border-left: 3px solid #fff;
 }
 `;
 
@@ -122,10 +123,10 @@ align-items: center;
 
 export const NavBtnLink = styled(LinkR)`
 border-radius: 50px;
-background: linear-gradient(to right, #bc4e9c, #f80759);
+background: rgba(255,255,255,0.4);
 white-space: nowrap;
 padding: 10px 22px;
-color: #010606;
+color: #fff;
 font-size: 1rem;
 outline: none;
 border: none;

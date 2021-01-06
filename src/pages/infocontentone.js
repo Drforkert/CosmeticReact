@@ -1,10 +1,11 @@
 import React from 'react'
 import ContentOne from '../components/InfoSectionContent';
+import { SliderData } from '../components/InfoSectionContent/SliderData';
 
 const InfoContentOne = () => {
     return (
         <>
-           <ContentOne /> 
+           <ContentOne slides={SliderData}/> 
         </>
     )
 }

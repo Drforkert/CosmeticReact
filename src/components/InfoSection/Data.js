@@ -1,6 +1,7 @@
 import ImageOne from '../../images/bg.jpg';
-import ImageTwo from '../../images/makeup.jpg';
+import ImageTwo from '../../images/wedding2ink.jpg';
 import ImageThree from '../../images/nailsservice.jpg';
+import ImageFour from '../../images/wimpernlifting.jpg';
 
 export const homeObjOne = {
     id: "about",
@@ -52,4 +53,21 @@ export const homeObjThree = {
     primary: true,
     darkText: false,
     ButtonPath: "infocontentthree",
+}
+export const homeObjFour = {
+    id: "massage",
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Muss mir überschriften ausdenken',
+    headline: 'Wimpernlfting',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
+    buttonLabel: 'Und Beschreibungen',
+    imgStart: true,
+    img: ImageFour,
+    alt: "Welcome",
+    dark: true,
+    primary: true,
+    darkText: true,
+    ButtonPath: "infocontentfour",
 }

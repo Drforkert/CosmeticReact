@@ -14,18 +14,38 @@ export const ChangeBG = keyframes`
 }
 `;
 
+
+export const Background = styled.div`
+width: 100%;
+height: 100%;
+position: absolute;
+`;
+
+export const Img = styled.img`
+width: 100%;
+height: 100vh;
+object-fit: cover;
+position: absolute;
+
+@media screen and (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+}
+`;
 export const Container = styled.div`
-min-height: 692px;
-position: fixed;
+height: 100%;
+position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
 top: 0;
-z-index: 0;
+z-index: 1;
 overflow: hidden;
-background: linear-gradient(-45deg, #bc4e9c, #f80759, #bc4e7c, #f80964);
-background-size: 400% 400%;
-animation: ${ChangeBG} 10s ease-in-out infinite;
+
+
+@media screen and (max-width: 480px) {
+    height: 1100px;
+}
 `;
 
 export const FormWrap = styled.div`
@@ -38,16 +58,29 @@ justify-content: center;
     height: 80%;
 }
 `;
+export const LogoAnim = keyframes`
+0%{
+    transform: scale(1.0);
+}
+50%{
+    transform: scale(1.2);
+}
+100%{
+    transform: scale(1.0);
+}`;
+
 
 export const Icon = styled(Link)`
 margin-left: 2rem;
 margin-top: 2rem;
 text-decoration: none;
 width: 100px;
+z-index: 0;
 color: #fff;
 font-family: 'Pacifico';
 font-weight: 700;
 font-size: 2rem;
+animation: ${LogoAnim} 4s linear infinite;
 
 @media screen and (max-width: 480px) {
     margin-left: 1rem;
@@ -68,15 +101,16 @@ justify-content: center;
 `;
 
 export const Form = styled.form`
-background: linear-gradient(to right, #bc4e9c, #f80759);
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 max-width: 600px;
 height: auto;
 width: 100%;
 z-index: 1;
 display: grid;
 margin: 0 auto;
+border-radius: 20px;
 padding: 5rem 2rem;
-box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+box-shadow: 7px 7px 60px #000;
 
 @media screen and (max-width: 400px) {
     padding: 2rem 2rem;
@@ -86,8 +120,10 @@ box-shadow: 0 2px 4px rgba(0,0,0,0.9);
 export const FormH1 = styled.h1`
 margin-bottom: 2.5rem;
 color: #fff;
+z-index: 0;
+position: relative;
 font-size: 2rem;
-font-weight: 400;
+font-weight: 600;
 text-align: center;
 padding: 2.5rem;
 @media screen and (max-width: 450px) {
@@ -109,7 +145,7 @@ border-radius: 4px;
 `;
 
 export const FormButton =styled.button`
-background: Turquoise;
+background: black;
 padding: 1rem 0;
 margin: 2rem;
 border: none;
@@ -119,9 +155,10 @@ font-size: 1.25rem;
 cursor: pointer;
 
 &:hover{
-    background: #000;
+    background: transparent;
     transform scale(1.1);
     transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
 }
 `;
 

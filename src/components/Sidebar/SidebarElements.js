@@ -1,7 +1,7 @@
 import styled, {keyframes} from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import {Link as LinkS} from 'react-scroll';
-import {Link as LinkR} from 'react-router-dom'; 
+import {Link as LinkR} from 'react-router-dom';
 
 export const ChangeBG = keyframes`
 0%{
@@ -19,10 +19,10 @@ export const SidebarContainer = styled.aside`
 position: fixed;
 z-index: 999;
 width: 100%;
+background: linear-gradient(90deg, #536976, #292e49, #536976, #292e49);
+background-size: 300% 300%;
+animation: ${ChangeBG} 10s infinite; 
 height: 100%;
-animation: ${ChangeBG} 8s ease-in-out infinite;
-background: linear-gradient(-90deg, #1a2a6c, #b21f1f, #fdbb2d);
-background-size: 200% 200%;
 display: grid;
 align-items: center;
 top: 0;
@@ -72,7 +72,7 @@ color: #fff;
 cursor: pointer;
 
 &:hover{
-    color: #01bf71;
+    color: #f4c4f3;
     transition: 0.2s ease-in-out;
 }
 `;
@@ -83,7 +83,7 @@ justify-content: center;
 
 export const SidebarRoute = styled(LinkR)`
 border-radius: 50px;
-background: #01bf71;
+background: #f4c4f3;
 white-space: nowrap;
 padding: 16px 64px;
 color: #010606;

@@ -17,14 +17,17 @@ const Sidebar = ( {toggle, isOpen} ) => {
                Entdecke..              
              </SidebarLink> 
              <SidebarLink to="services" onClick={toggle}>
-               Angebote              
-             </SidebarLink> 
-             <SidebarLink to="offers" onClick={toggle}>
                Spezial              
+             </SidebarLink> 
+             <SidebarLink to="massage" onClick={toggle}>
+               Klick mich!              
+             </SidebarLink>
+             <SidebarLink to="offers" onClick={toggle}>
+               Alle Services              
              </SidebarLink>         
             </SidebarMenu>
             <SideBtnWrap>
-              <SidebarRoute to="/signin">Sign In</SidebarRoute>  
+              <SidebarRoute to="/signin">Kontakt</SidebarRoute>  
             </SideBtnWrap>
           </SidebarWrapper>    
         </SidebarContainer>

@@ -8,7 +8,7 @@ const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav = ()=> {
-      if(window.scrollY >= 500) {
+      if(window.scrollY >= 5100) {
         setScrollNav(true)
       } else {
         setScrollNav(false)
@@ -46,8 +46,12 @@ const Navbar = ({ toggle }) => {
                 exact='true' offset={-80} activeClass="active">Spezial</NavLinks>              
               </NavItem>
               <NavItem>
-                <NavLinks to="offers" smooth={true} duration={800} spy={true}
-                exact='true' activeClass="active">Angebote</NavLinks>              
+                <NavLinks to="massage" smooth={true} duration={800} spy={true}
+                exact='true' offset={-80} activeClass="active">Klick mich!</NavLinks>              
+              </NavItem>
+              <NavItem>
+                <NavLinks to="offers" smooth={true} offset={-80} duration={800} spy={true}
+                exact='true' activeClass="active">Zusammenfassung</NavLinks>              
               </NavItem>            
              </NavMenu>
              <NavBtn>

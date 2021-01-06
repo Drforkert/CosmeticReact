@@ -1,11 +1,15 @@
 import React from 'react'
-import { FormContent, FormInput, FormLabel, FormWrap, Container, Icon, FormH1, FormButton, Form, TextArea, } from './SigninElements'
+import { FormContent, FormInput, FormLabel, FormWrap, Container, Icon, FormH1, FormButton, Form, TextArea, Img, Background } from './SigninElements'
+import BgImg from '../../images/signinbg.jpg';
+
 
 const SignIn = () => {
     return (
         <>
          <Container>
-            <FormWrap>
+           <Background>
+             <Img src={BgImg}/>
+            <FormWrap >
              <Icon to="/">Kamin</Icon>
              <FormH1>Eine Frage oder gleich ein Termin?</FormH1>
              <FormContent>
@@ -17,10 +21,11 @@ const SignIn = () => {
                <FormLabel placeholder="Message">Message</FormLabel>
                <TextArea placeholder="Message" required></TextArea>
                <FormButton type="submit">Senden</FormButton> 
-              </Form>  
+              </Form>
              </FormContent>
-             </FormWrap>   
-         </Container>   
+             </FormWrap>
+             </Background>   
+         </Container> 
         </>
     )
 }

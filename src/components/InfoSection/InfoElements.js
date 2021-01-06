@@ -16,10 +16,10 @@ export const InfoSectionAnim = keyframes`
 
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? 'linear-gradient(-90deg, #ba8b02, #181818)' : 'linear-gradient(-90deg, #ba8b02, #181818)')};
+background: ${({lightBg}) => (lightBg ? 'linear-gradient(-90deg, #e0eafc, #cfdef3)' : 'linear-gradient(-90deg, #232526, #414345)')};
 height: 1000px;
 background-size: 200% 200%;
-animation: ${InfoSectionAnim} 5s linear infinite;
+animation: ${InfoSectionAnim} 5s ease-in-out infinite;
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -36,6 +36,10 @@ margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 justify-content: center;
+
+@media screen and (min-width: 1300px) {
+    max-width: 1200px;
+}
 `;
 
 export const InfoRow = styled.div`
