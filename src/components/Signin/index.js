@@ -1,6 +1,6 @@
 import React from 'react'
 import { FormContent, FormInput, FormLabel, FormWrap, Container, Icon, FormH1, FormButton, Form, TextArea, Img, Background } from './SigninElements'
-import BgImg from '../../images/signinbg.jpg';
+import BgImg from '../../images/bg3.jpg';
 
 
 const SignIn = () => {

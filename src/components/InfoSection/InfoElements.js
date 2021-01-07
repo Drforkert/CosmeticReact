@@ -51,6 +51,9 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) =>(imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)};
 }
+@media screen and (min-width: 1300px) {
+    width: 1300px;
+}
 `;
 
 export const Column1 = styled.div`

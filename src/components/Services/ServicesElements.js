@@ -14,7 +14,7 @@ export const ChangeBG = keyframes`
 `;
 export const ServicesContainer = styled.div`
 height: 1000px;
-background: linear-gradient(-90deg, #232526, #414345);
+background: linear-gradient(-90deg, #141e30, #243b55);
 background-size: 200% 200%;
 display: flex;
 position: relative;
@@ -22,7 +22,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding-top: 50px;
-animation: ${ChangeBG} 10s ease-in-out infinite;
+animation: ${ChangeBG} 8s ease-in-out infinite;
 
 
 @media screen and (max-width: 768px) {
@@ -96,14 +96,12 @@ height: 220px;
 width: 250px;
 object-fit: cover;
 margin-bottom: 15px;
-border: 2px solid #ffff;
-box-shadow: 4px 4px 4px 0px #000;
 `;
 
 export const ServicesH1 = styled.h1`
 font-size: 2.2rem;
 color: #fff;
-margin-bottom: 20px;
+margin-bottom: 10px;
 
 @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -114,7 +112,7 @@ font-size: 1.5rem;
 font-weight: 500;
 margin: 30px;
 color: #fff;
-padding: 20px;
+padding: 5px;
 `;
 export const ServicesH2 = styled.h2`
 font-size: 1rem;
@@ -128,9 +126,9 @@ text-align: center;
 `;
 
 export const ServicesP2 = styled.p`
-font-size: 1.2rem;
+font-size: 1rem;
 color: #fff;
 font-weight: 400;
-margin: 30px;
+margin-left: 30px;
 `;
 

@@ -7,9 +7,9 @@ const ContentTwo = ({headline, topLine, imgStart, description, titleText, url, w
     return (
         <>
           <ContentContainer>
-          <Icon to="/">Kamin</Icon>
           <Title>{titleText}</Title>
            <ContentWrapper>
+           <Icon to="/">Kamin</Icon>
            <AlignInfo imgStart={imgStart}>
             <ColumnX>
               <ProductWrapper>

@@ -1,6 +1,3 @@
-import VideoOne from '../../videos/videoinfo.mp4';
-
-
 export const infoObjOne = {
 
     topLine: 'Teaser-Überschrift',

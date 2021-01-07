@@ -16,7 +16,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                 <Button to={ButtonPath}
+                 <Button to={ButtonPath} exact
                  spy="true"
                  primary={primary ? 1 : 0}
                  dark={dark ? 1 : 0}

@@ -19,6 +19,20 @@ export const Background = styled.div`
 width: 100%;
 height: 100%;
 position: absolute;
+
+
+&:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.5) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 1;
+}
 `;
 
 export const Img = styled.img`
@@ -71,11 +85,11 @@ export const LogoAnim = keyframes`
 
 
 export const Icon = styled(Link)`
-margin-left: 2rem;
+margin-left: 4rem;
 margin-top: 2rem;
 text-decoration: none;
 width: 100px;
-z-index: 0;
+z-index: 2;
 color: #fff;
 font-family: 'Pacifico';
 font-weight: 700;
@@ -105,7 +119,7 @@ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 max-width: 600px;
 height: auto;
 width: 100%;
-z-index: 1;
+z-index: 2;
 display: grid;
 margin: 0 auto;
 border-radius: 20px;
@@ -120,7 +134,7 @@ box-shadow: 7px 7px 60px #000;
 export const FormH1 = styled.h1`
 margin-bottom: 2.5rem;
 color: #fff;
-z-index: 0;
+z-index: 2;
 position: relative;
 font-size: 2rem;
 font-weight: 600;

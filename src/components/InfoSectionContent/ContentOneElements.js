@@ -127,10 +127,15 @@ margin: 0.5rem;
 `;
 export const SliderButtons = styled.div`
 position: absolute;
-bottom: 50px;
-right: 50px;
+bottom: 20%;
+right: 45%;
 display: flex;
 z-index: 10;
+
+@media screen and (max-width: 480px) {
+    bottom: 10%;
+    right: 17.5%
+}
 `;
 
 

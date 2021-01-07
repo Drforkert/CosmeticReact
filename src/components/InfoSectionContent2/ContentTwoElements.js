@@ -17,6 +17,8 @@ export const BgColorAnim = keyframes`
 
 export const ContentContainer = styled.div`
 color: #fff;
+width: 100%;
+height: 1200px;
 background: linear-gradient(-90deg, #bdc3c7, #2c3e50);
 animation: ${BgColorAnim} 6s linear infinite;
 background-size: 200% 200%;
@@ -35,7 +37,7 @@ font-size: 3rem;
 color: #000;
 z-index: 10;
 text-align: center;
-padding: 20px 0 20px 0;
+padding: 20px 0 30px 0;
 
 @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -69,13 +71,15 @@ animation: ${LogoAnim} 4s linear infinite;
     margin-left: 1rem;
     margin-top: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+    margin-left: 2rem;
+}
 `;
 
 
 export const ContentWrapper = styled.div`
 display: grid;
 z-index: 1;
-height: 830px;
 width: 100%;
 max-width: 1100px;
 margin-right: auto;
@@ -97,7 +101,12 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
 
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-};
+
+}
+
+@media screen and (min-width: 1300px) {
+   width: 1400px; 
+}
 `;
 
 export const ColumnX = styled.div`
@@ -108,7 +117,7 @@ grid-area: col1;
 
 export const ColumnY = styled.div`
 margin-bottom: 15px;
-padding: 0 15px;
+padding: 25px 15px;
 grid-area: col2;
 
 @media screen and (max-width: 768px) {
@@ -163,22 +172,13 @@ justify-content: flex-start;
 
 export const PlayerWrap = styled.div`
 max-width: 600px;
-height: 100%;
+height: 500px;
+border: 4px solid white;
+border-radius: 30px;
+overflow: hidden;
 
-@media screen and (max-width: 480px) {
-    height: 420px;
-}
+
 @media screen and (max-width: 320px) {
-    height: 300px;
-}
-@media screen and (min-width: 540px) {
     height: 400px;
-}
-@media screen and (min-width: 768px){
-    height: 400px;
-}
-@media screen and (min-width: 1200px) {
-    height: 600px;
-    width: 600px;
 }
 `;
