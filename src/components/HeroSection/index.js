@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Video from '../../videos/video.mp4';
-import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { HeroContainer, HeroBg, HeroContent, Img, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ScrollButtonElements';
+import Gif from '../../images/ayee.gif';
 
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id="home" activeClass="active">
           <HeroBg>
-           <video autoPlay loop muted playsInline src={Video} alt="house"/>
+           <Img src={Gif} alt="home" />
           </HeroBg>
           <HeroContent>
            <HeroH1>Kosmetikstudio Sandra Kamin</HeroH1>
