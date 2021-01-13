@@ -50,6 +50,7 @@ export const VideoBg = styled.video`
 width: 100%;
 height: 100%;
 object-fit: cover;
+-o-object-fit: cover;
 background: #232a34;
 
 @media screen and (max-width: 480px) {
