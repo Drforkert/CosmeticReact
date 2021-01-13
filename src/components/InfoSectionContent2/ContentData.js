@@ -5,7 +5,7 @@ export const infoObjOne = {
     description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam etLorem ipsum dolor sit amet, consetetur sadipscing elitr, s',
     imgStart: true,
     url: "https://youtu.be/wVTJf_aKdzo",
-    titleText: "Vorstellung Service 1",
+    titleText: "Unser Trailer :)",
     width: "100%",
     height: "100%",
 };
@@ -17,7 +17,7 @@ export const infoObjTwo = {
     headline: 'Aqua est Dios',
     description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
     imgStart: false,
-    url: "https://youtu.be/WmBLr6qNj8Mo",
+    url: "https://youtu.be/wVTJf_aKdzo",
     titleText: "Vorstellung Service 2",
     width: "100%",
     height: "100%"
