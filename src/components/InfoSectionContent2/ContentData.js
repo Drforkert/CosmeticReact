@@ -5,7 +5,7 @@ export const infoObjOne = {
     description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam etLorem ipsum dolor sit amet, consetetur sadipscing elitr, s',
     imgStart: true,
     url: "https://youtu.be/wVTJf_aKdzo",
-    titleText: "Unser Trailer :)",
+    titleText: "Deploy ME AUTOMATICALLY PLS",
     width: "100%",
     height: "100%",
 };
