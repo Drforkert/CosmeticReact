@@ -6,7 +6,7 @@ import SignInPage from './pages/signin';
 import ContentOne from './pages/infocontentone';
 import ContentTwo from './pages/infocontenttwo';
 import ContentThree from './pages/infocontentthree';
-
+import ContentFour from './pages/infocontentfour';
 
 function App() {
 
@@ -14,10 +14,11 @@ function App() {
     <Router>
     <Route path="/" component={Home} exact />
       <Switch>
-      <Route path="/signin" component={SignInPage} exact />
-      <Route path="/infocontentone" component={ContentOne} exact />
-      <Route path="/infocontenttwo" component={ContentTwo} exact />
-      <Route path="/infocontentthree" component={ContentThree} />
+      <Route exact path="/signin" component={SignInPage} />
+      <Route exact path="/infocontentone" component={ContentOne} />
+      <Route exact path="/infocontenttwo" component={ContentTwo} />
+      <Route exact path="/infocontentthree" component={ContentThree} />
+      <Route exact path="/infocontentfour" component={ContentFour}/>
       </Switch>
     </Router>
   );

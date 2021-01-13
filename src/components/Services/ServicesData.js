@@ -1,20 +1,28 @@
-import Icon1 from '../../images/wimpernlifting.jpg';
-import Icon2 from '../../images/shellac.jpg';
-import Icon3 from '../../images/wedding2ink.jpg';
 
+export const Productdata = [
+    {
+        img: "https://images.pexels.com/photos/5128271/pexels-photo-5128271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        alt: 'Whatever',
+        name: 'Max Mustermann',
+        desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+        quote: "Kundenzitat", 
 
-export const serviceObjOne = {
-    img: Icon1,
-    headingOne: "ja deine Heading Funktioniert plebbo!!! ###HYPE",
-    description: "und deine Description auch maestro!",
-}
-export const serviceObjTwo = {
-    img: Icon2,
-    headingTwo: "ja deine Heading Funktioniert plebbo!!! ###HYPE",
-    description: "und deine Description auch maestro!",
-}
-export const serviceObjThree = {
-    img: Icon3,
-    headingThree: "Wedding Make-up",
-    description: "und deine Description auch maestro!",
-}
+    },
+
+    {
+        img: "https://images.pexels.com/photos/3779758/pexels-photo-3779758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
+        alt: 'Whatever',
+        name: 'Mux Mastermann',
+        desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+        quote: " diam nonumy eirmod tempor invidunt ut", 
+    },
+
+    {
+        img: "https://images.pexels.com/photos/354562/pexels-photo-354562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
+        alt: 'Whatever',
+        name: 'Mann Maxtermus',
+        desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+        quote: "Lorem ipsum do sed diam nonumy eirmod tempor invidunt ut", 
+    },
+     
+]

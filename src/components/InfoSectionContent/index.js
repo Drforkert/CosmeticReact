@@ -6,23 +6,24 @@ import {Button} from '../ButtonElements';
 
 const ContentOne = ({ slides }) => {
 
+
   const [current, setCurrent] = useState(0)
   const length = slides.length 
   const timeout = useRef(null)
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   const nextSlide = () => {
-  //     setCurrent(current => (current === length - 1 ? 0 : current + 1))
-  //   }
-  //   timeout.current = setTimeout(nextSlide, 5000)
+    const nextSlide = () => {
+      setCurrent(current => (current === length - 1 ? 0 : current + 1))
+    }
+    timeout.current = setTimeout(nextSlide, 5000)
 
-  //   return function () {
-  //     if(timeout.current) {
-  //       clearTimeout(timeout.current)
-  //     }
-  //   }
-  // }, [current, length])
+    return function () {
+      if(timeout.current) {
+        clearTimeout(timeout.current)
+      }
+    }
+  }, [current, length])
 
   const nextSlide = () => {
     if(timeout.current) {
@@ -41,7 +42,7 @@ const ContentOne = ({ slides }) => {
   
   if(!Array.isArray(slides) || slides.length <= 0) {
     return null;
-  }
+  };
 
 
     return (
@@ -50,19 +51,15 @@ const ContentOne = ({ slides }) => {
           <ContentWrapper>
             {slides.map((slide, index) => {
               return (
-                <ImageSlide key={index}>
+                <ImageSlide key={index} activeClass="active">
                  {index === current && (
 
                   <ImageSlider>
-                    <ContentImage src={slide.image} alt={slide.alt} activeClass="active" />
+                    <ContentImage src={slide.image} alt={slide.alt} activeClass="active"/>
                     <PageContent>
                       <h1>{slide.title}</h1>
                       <p>{slide.description}</p>
                       <Button primary="true" to={slide.path}
-                      css={`
-                            color: #000;
-                            
-                            `}
                           >
                       {slide.label}
                        <Arrow/>

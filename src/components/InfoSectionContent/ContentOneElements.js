@@ -8,6 +8,10 @@ height: 100vh;
 max-height: 1100px;
 position: relative;
 overflow: hidden;
+
+@media screen and (max-width: 1024px) {
+    max-height: 1400px;
+}
 `;
 
 export const LogoAnim = keyframes`
@@ -47,7 +51,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 overflow: hidden;
-position: relative;
+position: absolute;
+opacity: 1;
 `;
 
 export const ImageSlide = styled.div`
@@ -113,7 +118,7 @@ h1{
 p{
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0,0,0,0.8);
-    font-size: clamp((1rem, 5vw, 1.5rem) //2);
+    font-size: clamp((1rem, 5vw, 1.5rem) /2);
 
     @media screen and (max-width: 480px) {
         font-size: clamp(1rem, 4vw, 1.2rem);

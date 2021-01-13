@@ -16,10 +16,10 @@ export const InfoSectionAnim = keyframes`
 
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? 'linear-gradient(-90deg, #e0eafc, #cfdef3)' : 'linear-gradient(-90deg, #232526, #414345)')};
+background: ${({lightBg}) => (lightBg ? 'linear-gradient(-90deg, #bbd2c5, #536976)' : 'linear-gradient(-90deg, #232526, #414345)')};
 height: 1000px;
 background-size: 200% 200%;
-animation: ${InfoSectionAnim} 5s ease-in-out infinite;
+animation: ${InfoSectionAnim} 8s ease-in infinite;
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -72,11 +72,16 @@ export const TextWrapper = styled.div`
 max-width: 540px;
 padding-top: 0;
 padding-bottom: 60px;
+
+
+@media screen and (max-width: 480px) {
+    padding-bottom: 20px;
+}
 `;
 
 export const TopLine = styled.p`
-color: #fff;
-font-size: 1rem;
+color: white;
+font-size: 1.1rem;
 line-height: 1rem;
 font-weight: 700;
 letter-spacing: 1.4px;
@@ -118,9 +123,10 @@ export const Img = styled.img`
 width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0;
+border: 4px solid white;
+box-shadow: 4px 4px 40px ${({lightBg}) => (lightBg ? '#fff' : '#000')};
 
 @media screen and (max-width: 768px) {
-    height: 300px;
+    max-height: 400px;
 }
 `;
-

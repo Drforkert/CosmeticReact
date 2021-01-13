@@ -1,6 +1,6 @@
 import React from 'react'
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements';
-
+import img2 from '../../images/beautyprod1.jpg'
 
 const Sidebar = ( {toggle, isOpen} ) => {
     return (

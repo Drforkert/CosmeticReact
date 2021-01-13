@@ -18,7 +18,7 @@ const HeroSection = () => {
            <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
           </HeroBg>
           <HeroContent>
-           <HeroH1>Kosmetikstudio Kamin</HeroH1>
+           <HeroH1>Kosmetikstudio Sandra Kamin</HeroH1>
            <HeroP>Schau dir meine Angebote zur Entspannung an !
            </HeroP>
            <HeroBtnWrapper>

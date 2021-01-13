@@ -14,7 +14,7 @@ export const ChangeBG = keyframes`
 `;
 export const ServicesContainer = styled.div`
 height: 1000px;
-background: linear-gradient(-90deg, #141e30, #243b55);
+background: linear-gradient(-90deg, #232526, #414345);
 background-size: 200% 200%;
 display: flex;
 position: relative;
@@ -132,3 +132,78 @@ font-weight: 400;
 margin-left: 30px;
 `;
 
+
+
+/// NEW TRIAL STARTS HERE MIGHT DELETE OLD ONE SOON ///
+
+export const ProductsContainer = styled.div`
+width: 100%; 
+min-height: 100vh;
+padding: 5rem calc((100vw - 1300px) /2);
+background: linear-gradient(-90deg, #232526, #414345);
+color: #fff;
+`;
+
+
+export const ProductsHeading = styled.h1`
+font-size: 2rem;
+color: #fff;
+text-align: center;
+padding-bottom: 2rem;
+`;
+
+export const ProductWrapper = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 0 auto;
+`;
+
+export const ProductCard = styled.div`
+margin: 0 2rem;
+line-height: 2;
+width: 300px;
+`;
+
+export const ProductImg = styled.img`
+height: 300px;
+min-width: 300px;
+max-width: 100%;
+object-fit: cover;
+border: 3px solid white;
+box-shadow: 8px 8px 40px #fff;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+
+
+&:hover{
+    transform: scale(1.08);
+}
+`;
+
+export const ProductTitle = styled.h2`
+font-weight: 400;
+font-size: 1.5rem;
+`;
+
+export const ProductInfo = styled.div`
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+text-align: center;
+`;
+
+export const ProductDesc = styled.p`
+margin-bottom: 1rem;
+font-size: 1rem;
+text-align: center;
+`;
+
+export const ProductQuote = styled.p`
+margin-bottom: 1rem;
+font-size: 1rem;
+color: grey;
+text-align: right;
+`;

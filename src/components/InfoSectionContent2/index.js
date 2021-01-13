@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlignInfo, ColumnX, ContentContainer, ContentWrapper, Icon, Description, ProductWrapper, HeadingSec, PlayerWrap, ColumnY, UpLine, Title } from './ContentTwoElements';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
  
 const ContentTwo = ({headline, topLine, imgStart, description, titleText, url, width, height}) => {
 

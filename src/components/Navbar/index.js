@@ -27,7 +27,7 @@ const Navbar = ({ toggle }) => {
          <Nav scrollNav={scrollNav}>
             <NavbarContainer>
              <NavLogo to='/' onClick={toggleHome}>
-              Kamin               
+              Sandra Kamin               
              </NavLogo>
              <MobileIcon onClick={toggle}>
               <FaBars />            

@@ -19,7 +19,7 @@ export const ContentContainer = styled.div`
 color: #fff;
 width: 100%;
 height: 1200px;
-background: linear-gradient(-90deg, #bdc3c7, #2c3e50);
+background: linear-gradient(-90deg, #bbd2c5, #536976);
 animation: ${BgColorAnim} 6s linear infinite;
 background-size: 200% 200%;
 
@@ -159,9 +159,10 @@ color: #000;
 `;
 
 export const Description = styled.p`
-max-width: 440px;
+max-width: 500px;
 margin-bottom: 45px;
 font-size: 1.1rem;
+box-shadow: 6px 6px 6px 40px solid black;
 color: #000;
 `;
 
@@ -174,7 +175,7 @@ export const PlayerWrap = styled.div`
 max-width: 600px;
 height: 500px;
 border: 4px solid white;
-border-radius: 30px;
+box-shadow: 8px 8px 40px #fff;
 overflow: hidden;
 
 

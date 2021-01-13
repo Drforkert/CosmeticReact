@@ -1,33 +1,25 @@
 import React from 'react';
-import Icon1 from '../../images/eye-make-up.svg';
-import Icon2 from '../../images/manicure.svg';
-import Icon3 from '../../images/lipstick.svg';
-import {ServicesContainer, ServicesH1, ServicesH3, ServicesP2, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './ServicesElements';
+import {ProductsContainer, ProductsHeading, ProductWrapper, ProductCard, ProductImg, ProductDesc, ProductQuote, ProductInfo, ProductTitle} from './ServicesElements';
 
-const Services = () => {
+
+const Services = ({data}) => {
     return (
-        <ServicesContainer id="offers">
-          <ServicesH1>Überblick</ServicesH1>
-          <ServicesH3>Lorem ipsum dolor sit amet, consetetur </ServicesH3>
-          <ServicesP2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</ServicesP2>
-          <ServicesWrapper>
-            <ServicesCard>
-             <ServicesIcon src={Icon1} alt="house"/>
-             <ServicesH2>Wimpern</ServicesH2>
-             <ServicesP>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</ServicesP>           
-            </ServicesCard>
-            <ServicesCard>
-             <ServicesIcon src={Icon2} alt="house"/>
-             <ServicesH2>Shell Nagellack</ServicesH2>
-             <ServicesP>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</ServicesP>           
-            </ServicesCard>
-            <ServicesCard>
-             <ServicesIcon src={Icon3} alt="house"/>
-             <ServicesH2>Hochzeits Make-up</ServicesH2>
-             <ServicesP>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</ServicesP>           
-            </ServicesCard>
-          </ServicesWrapper>  
-        </ServicesContainer>
+      <ProductsContainer id="offers">
+        <ProductsHeading>Kundenzitat</ProductsHeading>
+        <ProductWrapper>
+          {data.map((product, index) => {
+            return (
+              <ProductCard key={index}>
+                <ProductImg src={product.img} alt={product.alt} />
+                <ProductInfo>
+                  <ProductTitle>{product.name}</ProductTitle>
+                  <ProductDesc>{product.desc}</ProductDesc>
+                  <ProductQuote>{product.quote}</ProductQuote>
+                </ProductInfo> 
+              </ProductCard>)
+          })}
+        </ProductWrapper>
+      </ProductsContainer>
     )
 }
 

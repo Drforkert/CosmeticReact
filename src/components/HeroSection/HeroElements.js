@@ -30,6 +30,9 @@ z-index: 1;
 @media screen and (max-width: 768px) {
     height: 900px;
 };
+@media screen and (max-width: 320px) {
+    height: 600px;
+}
 `;
 
 export const HeroBg = styled.div`
@@ -51,7 +54,7 @@ background: #232a34;
 
 @media screen and (max-width: 480px) {
     height: 100%;
-},
+}
 @media only screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -71,7 +74,7 @@ align-items: center;
 
 export const moveToLeft = keyframes`
 0% {
-    transform: translateX(120px);
+    transform: translateX(60px);
     opacity: 0;
 }
 100% {
@@ -81,7 +84,7 @@ export const moveToLeft = keyframes`
 `;
 export const moveToRight = keyframes`
 0% {
-    transform: translateX(-120px);
+    transform: translateX(-60px);
     opacity: 0;
 }
 100% {

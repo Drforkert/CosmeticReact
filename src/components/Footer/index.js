@@ -15,7 +15,7 @@ const Footer = () => {
           <FooterWrap>
            <SocialMedia>
             <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>Kosmetik Kamin
+            <SocialLogo to="/" onClick={toggleHome}>Kosmetik Sandra Kamin
             </SocialLogo>
             <WebsiteRights>Kamin © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
