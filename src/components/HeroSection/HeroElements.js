@@ -100,7 +100,7 @@ color: #fff;
 font-family: 'Pacifico';
 font-size: 4rem;
 text-align: center;
-animation: ${moveToLeft} 3s;
+animation: ${moveToLeft} 2s;
 overflow: hidden;
 position: relative;
 
@@ -114,7 +114,7 @@ position: relative;
 
 export const HeroP = styled.p`
 margin-top: 24px;
-animation: ${moveToRight} 3s;
+animation: ${moveToRight} 2s;
 color: #fff;
 font-size: 1.5rem;
 text-align: center;
