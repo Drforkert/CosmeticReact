@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id="home" activeClass="active">
           <HeroBg>
-           <VideoBg loop autoPlay  muted src={Video} type='video/mp4'/>
+           <VideoBg loop autoPlay controls={false} muted src={Video} type='video/mp4'/>
           </HeroBg>
           <HeroContent>
            <HeroH1>Kosmetikstudio Sandra Kamin</HeroH1>
