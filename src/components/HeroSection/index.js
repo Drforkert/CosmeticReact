@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { HeroContainer, HeroBg, HeroContent, Img, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ScrollButtonElements';
-import Gif from '../../images/ayee.gif';
+import Gif from '../../images/makeup.jpg';
 
 
 const HeroSection = () => {

@@ -15,7 +15,7 @@ const ContentTwo = ({headline, topLine, imgStart, description, titleText, url, w
               <ProductWrapper>
                <UpLine>{topLine}</UpLine>
                <HeadingSec>{headline}</HeadingSec>
-               <Description>{description}</Description> 
+               <Description>{description}</Description>
               </ProductWrapper>
             </ColumnX>
             <ColumnY>

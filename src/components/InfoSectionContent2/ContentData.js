@@ -20,5 +20,5 @@ export const infoObjTwo = {
     url: "https://youtu.be/wVTJf_aKdzo",
     titleText: "Vorstellung Service 2",
     width: "100%",
-    height: "100%"
+    height: "100%",
 };
