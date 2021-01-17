@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { HeroContainer, HeroBg, HeroContent, Img, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ScrollButtonElements';
-import Gif from '../../images/makeup.jpg';
+import ImgOne from '../../images/sizedbg.jpg';
 
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id="home" activeClass="active">
           <HeroBg>
-           <Img src={Gif} alt="home" />
+           <Img src={ImgOne} alt="home" />
           </HeroBg>
           <HeroContent>
            <HeroH1>Kosmetikstudio Sandra Kamin</HeroH1>

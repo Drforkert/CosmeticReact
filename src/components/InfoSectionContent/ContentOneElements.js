@@ -103,7 +103,7 @@ width: 100%;
 color: #fff;
 
 h1{
-    font-size: clamp(1rem, 8vw, 2rem);
+    font-size: clamp((1rem, 8vw, 2rem) /2);
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0,0,0,0.4);

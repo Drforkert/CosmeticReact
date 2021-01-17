@@ -14,11 +14,11 @@ function App() {
     <Router>
     <Route path="/" component={Home} exact />
       <Switch>
-      <Route exact path="/signin" component={SignInPage} />
-      <Route exact path="/infocontentone" component={ContentOne} />
-      <Route exact path="/infocontenttwo" component={ContentTwo} />
-      <Route exact path="/infocontentthree" component={ContentThree} />
-      <Route exact path="/infocontentfour" component={ContentFour}/>
+      <Route path="/signin" component={SignInPage} />
+      <Route path="/infocontentone" component={ContentOne} exact />
+      <Route path="/infocontenttwo" component={ContentTwo} exact />
+      <Route path="/infocontentthree" component={ContentThree} exact />
+      <Route path="/infocontentfour" component={ContentFour} exact />
       </Switch>
     </Router>
   );

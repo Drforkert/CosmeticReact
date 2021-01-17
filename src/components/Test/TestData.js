@@ -10,14 +10,14 @@ export const SliderDatas = [
         path: "/",
     },
     {
-        title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+        title: "sed diam nonumy eirmod tempor invidunt utsed diam nonumy eirmod tempor invidunt ut",
         description: "Morgäään",
-        image: "https://images.unsplash.com/photo-1600852435692-8f34756456e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+        image: "https://images.pexels.com/photos/912950/pexels-photo-912950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         label: "Home",
         path: "/",
     },  
     {
-        title: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+        title: "Neviem Schmatka!",
         description: "Morgäään",
         image: "https://images.unsplash.com/photo-1585519356004-2bd6527d9cbe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
         label: "Home",
@@ -30,4 +30,12 @@ export const SliderDatas = [
         label: "Home",
         path: "/",
     },     
+    {
+        title: "Überschrift für das Bild",
+        description: "Morgäään",
+        image: "https://images.pexels.com/photos/2253832/pexels-photo-2253832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        label: "Home",
+        path: "/",
+    },
+    
 ];

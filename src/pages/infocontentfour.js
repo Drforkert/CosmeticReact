@@ -1,12 +1,12 @@
 import React from 'react'
-import Slider from '../components/Test'
-import { SliderDatas } from '../components/Test/TestData'
+import ContentTwo from '../components/InfoSectionContent2'
+import { infoObjThree } from '../components/InfoSectionContent2/ContentData'
 
 
 const infocontentfour = () => {
     return (
         <>
-        <Slider slides={SliderDatas}/>
+        <ContentTwo {... infoObjThree}/>  
         </>
     )
 }

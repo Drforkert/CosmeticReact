@@ -1,11 +1,11 @@
 import React from 'react'
-import ContentOne from '../components/InfoSectionContent';
-import { SliderData } from '../components/InfoSectionContent/SliderData';
+import Slider from '../components/Test';
+import { SliderDatas } from '../components/Test/TestData';
 
 const InfoContentOne = () => {
     return (
         <>
-           <ContentOne slides={SliderData}/> 
+        <Slider slides={SliderDatas}/> 
         </>
     )
 }
