@@ -46,7 +46,7 @@ overflow: hidden;
 
 
 @media screen and (max-width: 480px) {
-    height: 100%;
+    height: 1200px;
 }
 @media screen and (max-width: 360px){
     height: 1200px;
