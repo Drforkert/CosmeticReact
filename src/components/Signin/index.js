@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
-import { FormContent, Error, FormInput, FormLabel, ContactInfo, ThankYou, FormWrap, Container, Icon, FormH1, FormButton, Form, Message, Img, Background } from './SigninElements'
+import { FormContent, Error, FormInput, PhoneLink, ContactHeader, FormLabel, ContactInfo, ThankYou, FormWrap, Container, Icon, FormH1, FormButton, Form, Message, Img, Background } from './SigninElements'
 import { useForm } from "react-hook-form";
+import { FaPhone } from "react-icons/fa";
+import { FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 
 
 const SignIn = () => {
@@ -26,7 +28,10 @@ const SignIn = () => {
              <FormH1>Eine Frage oder gleich ein Termin?</FormH1>
              <FormContent>
              <ContactInfo>
-             <h1>Hello World asjkdlkasjdklj</h1> 
+             <PhoneLink><FaPhone /><ContactHeader>02921 / 6606558</ContactHeader></PhoneLink>
+             <PhoneLink a href="https://goo.gl/maps/LJFJaBUzJbGdpfX48" ><FaMapMarkedAlt /><ContactHeader>Emdenstraße 4, 59494 Soest</ContactHeader></PhoneLink>
+             <PhoneLink><FaEnvelope /><ContactHeader>Max-Mustermann@gmail.com</ContactHeader></PhoneLink>
+             </ContactInfo>
               <Form action="#" onSubmit={handleSubmit(onSubmittwo)} noValidate >
                <FormLabel placeholder="Name" >Name</FormLabel>
                {errors.name && <Error>{errors.name.message}</Error>}
@@ -52,7 +57,7 @@ const SignIn = () => {
                     placeholder="*Nachricht"
                     height="grande"
                     ref={register({ 
-                    required: {value: true, message:"Leer ? ein Angriff?"},
+                    required: {value: true, message:"Leer ??"},
                     minLength: {value:5, message:"Nachricht muss länger als 5 Zeichen lang sein"},
                     maxLength: {value:500, message:"Message must not exceed 500 characters"},
                 })}/>
@@ -62,7 +67,6 @@ const SignIn = () => {
                 <ThankYou>Vielen Dank!</ThankYou>
                 }
               </Form>
-              </ContactInfo>
              </FormContent>
              </FormWrap>
              </Background>   

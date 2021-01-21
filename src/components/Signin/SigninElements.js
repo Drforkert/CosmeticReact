@@ -46,7 +46,10 @@ overflow: hidden;
 
 
 @media screen and (max-width: 480px) {
-    height: 1100px;
+    height: 1200px;
+}
+@media screen and (max-width: 360px){
+    height: 1200px;
 }
 `;
 
@@ -56,8 +59,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-@media screen and (max-width: 400px) {
-    height: 80%;
+@media screen and (max-width: 480px) {
+    height: 100%;
 }
 `;
 export const LogoAnim = keyframes`
@@ -95,44 +98,87 @@ animation: ${LogoAnim} 4s linear infinite;
     padding-top: 5rem;
 }
 `;
+export const ContactHeader = styled.h1`
+align-items: center;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+padding: 20px;
+color: #fff;
 
-
-export const ContactInfo = styled.div`
-z-index: 3;
-display: flex; 
-justify-content: center;
-flex-direction: row;
-background: rgba(255,255,255,0.4), rgba(255,255,255, 0.6), rgba(255,255,255, 0.5);
-max-width: 1100px;
-margin: 0 auto;
-height: 650px;
+@media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
 `;
+export const ContactInfo = styled.div`
+z-index: 2;
+display: flex;
+flex-direction: column;
+background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+border-radius: 20px;
+height: 650px;
+padding: 2rem;
+margin-right: 2rem;
+width: 300px;
+box-shadow: 7px 7px 60px #000;
 
+@media screen and (max-width: 480px) {
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0; 
+}
+`;
 export const FormContent = styled.div`
 height: 100%;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: center;
 
 @media screen and (max-width: 480px) {
     padding: 10px;
+    flex-direction: column;
 }
 `;
 
+export const PhoneLink = styled.a`
+font-size: 2.5rem;
+cursor: pointer;
+color: white;
+text-decoration: none;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+&:hover{
+    color: pink;
+}
+
+@media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+    flex-direction: row;
+}
+`;
 export const Form = styled.form`
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-max-width: 600px;
+background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+width: 500px;
 height: 650px;
-width: 100%;
 z-index: 2;
 display: grid;
-margin: 0 auto;
 border-radius: 20px;
 padding: 5rem 2rem;
 box-shadow: 7px 7px 60px #000;
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     padding: 2rem 2rem;
+    width: 100%;
+    height: 100%;
 }
 `;
 export const Error = styled.p`
