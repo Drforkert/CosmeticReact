@@ -34,7 +34,7 @@ width: 100px;
 position: absolute;
 z-index: 10;
 color: #fff;
-font-family: 'Pacifico';
+font-family: 'Damion';
 font-weight: 700;
 font-size: 2rem;
 animation: ${LogoAnim} 4s linear infinite;

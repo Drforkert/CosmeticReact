@@ -21,7 +21,7 @@
     color: #fff;
     margin-top: 2rem;
     margin-left: 2rem;
-    font-family: 'Pacifico';
+    font-family: 'Damion';
     transition: all 0.3s ease-in-out;
     animation: LogoAnim 4s linear infinite;
 }
@@ -51,12 +51,12 @@
 }
 .slide {
     opacity: 0;
-    transition-duration: 1.5s;
-    transform: scale(0.98);
+    transition-duration: 2s;
+    transform: scale(1.02);
 }
 .slide.active {
     opacity: 1;
-    transition-duration: 1.5s;
+    transition-duration: 2s;
     transform: scale(1);
 }
 .titles{

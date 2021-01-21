@@ -102,7 +102,7 @@ export const moveToRight = keyframes`
 
 export const HeroH1 = styled.h1`
 color: #fff;
-font-family: 'Pacifico';
+font-family: 'Damion';
 font-size: 4rem;
 text-align: center;
 animation: ${moveToLeft} 2s;

@@ -54,7 +54,7 @@ color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 2rem;
-font-family: 'Pacifico';
+font-family: 'Damion';
 display: flex;
 align-items: center;
 margin-left: 24px;

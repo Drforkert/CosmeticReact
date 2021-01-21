@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import { FormContent, Error, FormInput, FormLabel, ThankYou, FormWrap, Container, Icon, FormH1, FormButton, Form, Message, Img, Background } from './SigninElements'
-import BgImg from '../../images/bg3.jpg';
+import { FormContent, Error, FormInput, FormLabel, ContactInfo, ThankYou, FormWrap, Container, Icon, FormH1, FormButton, Form, Message, Img, Background } from './SigninElements'
 import { useForm } from "react-hook-form";
 
 
@@ -21,11 +20,13 @@ const SignIn = () => {
         <>
          <Container>
            <Background>
-             <Img src={BgImg}/>
+             <Img src="https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
             <FormWrap >
              <Icon to="/">Kamin</Icon>
              <FormH1>Eine Frage oder gleich ein Termin?</FormH1>
              <FormContent>
+             <ContactInfo>
+             <h1>Hello World asjkdlkasjdklj</h1> 
               <Form action="#" onSubmit={handleSubmit(onSubmittwo)} noValidate >
                <FormLabel placeholder="Name" >Name</FormLabel>
                {errors.name && <Error>{errors.name.message}</Error>}
@@ -59,8 +60,9 @@ const SignIn = () => {
                {!isSubmitted ?
                 <FormButton onSubmit={onSubmit} type="submit">Senden</FormButton> :
                 <ThankYou>Vielen Dank!</ThankYou>
-                } 
+                }
               </Form>
+              </ContactInfo>
              </FormContent>
              </FormWrap>
              </Background>   

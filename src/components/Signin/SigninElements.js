@@ -79,7 +79,7 @@ text-decoration: none;
 width: 100px;
 z-index: 2;
 color: #fff;
-font-family: 'Pacifico';
+font-family: 'Damion';
 font-weight: 700;
 font-size: 2rem;
 animation: ${LogoAnim} 4s linear infinite;
@@ -97,6 +97,17 @@ animation: ${LogoAnim} 4s linear infinite;
 `;
 
 
+export const ContactInfo = styled.div`
+z-index: 3;
+display: flex; 
+justify-content: center;
+flex-direction: row;
+background: rgba(255,255,255,0.4), rgba(255,255,255, 0.6), rgba(255,255,255, 0.5);
+max-width: 1100px;
+margin: 0 auto;
+height: 650px;
+`;
+
 export const FormContent = styled.div`
 height: 100%;
 display: flex;
@@ -111,7 +122,7 @@ justify-content: center;
 export const Form = styled.form`
 background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 max-width: 600px;
-height: auto;
+height: 650px;
 width: 100%;
 z-index: 2;
 display: grid;
@@ -161,7 +172,7 @@ border-radius: 4px;
 export const FormButton = styled.button`
 background: black;
 padding: 1rem 0;
-margin: 2rem;
+margin: 1rem;
 border: none;
 border-radius: 0.25rem;
 color: #fff;
@@ -170,7 +181,7 @@ cursor: pointer;
 
 &:hover{
     background: transparent;
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     border: 2px solid #fff;
 }
