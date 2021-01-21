@@ -35,7 +35,7 @@ position: absolute;
 }
 `;
 export const Container = styled.div`
-height: 100%;
+height: 1100px;
 position: absolute;
 bottom: 0;
 left: 0;
@@ -45,11 +45,11 @@ z-index: 1;
 overflow: hidden;
 
 
-@media screen and (max-width: 480px) {
-    height: 1200px;
-}
 @media screen and (max-width: 360px){
     height: 1200px;
+}
+@media screen and (min-width: 1100px) {
+    height:100vh;
 }
 `;
 
