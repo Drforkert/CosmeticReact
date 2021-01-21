@@ -126,7 +126,7 @@ width: 300px;
 box-shadow: 7px 7px 60px #000;
 
 @media screen and (max-width: 480px) {
-    flex-direction: column;
+    flex-direction: row;
     height: 200px;
     width: 100%;
     margin-bottom: 1rem;
