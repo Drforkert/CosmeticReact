@@ -126,7 +126,8 @@ width: 300px;
 box-shadow: 7px 7px 60px #000;
 
 @media screen and (max-width: 480px) {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     height: 200px;
     width: 100%;
     margin-bottom: 1rem;
@@ -178,7 +179,7 @@ box-shadow: 7px 7px 60px #000;
 @media screen and (max-width: 480px) {
     padding: 2rem 2rem;
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 `;
 export const Error = styled.p`
