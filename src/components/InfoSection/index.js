@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Button } from '../ButtonElements';
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2,
      TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, ButtonPath}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, dataAos, dataAosTwo, dataAosImg, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, ButtonPath}) => {
+  useEffect(() => {
+    Aos.init({ duration: 1500,
+               delay: 100,
+               offset: 200});
+  }, []);
 
     return (
         <>
@@ -12,9 +19,9 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
             <InfoRow imgStart={imgStart}>
              <Column1>
                <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <TopLine data-aos={dataAos}>{topLine}</TopLine>
+                <Heading lightText={lightText} data-aos={dataAos}>{headline}</Heading>
+                <Subtitle darkText={darkText} data-aos={dataAosTwo}>{description}</Subtitle>
                 <BtnWrap>
                  <Button to={ButtonPath} exact
                  spy="true"
@@ -27,7 +34,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
              </Column1> 
              <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt}/>
+                <Img src={img} alt={alt} data-aos={dataAosImg}/>
               </ImgWrap>  
              </Column2>  
             </InfoRow>     

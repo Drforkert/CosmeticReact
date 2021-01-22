@@ -19,6 +19,9 @@ export const homeObjOne = {
     primary: true,
     darkText: false,
     ButtonPath: "infocontentone",
+    dataAos: "zoom-in-up",
+    dataAosTwo: "zoom-in-left",
+    dataAosImg: "flip-up"
 }
 export const homeObjTwo = {
     id: "discover",
@@ -36,6 +39,9 @@ export const homeObjTwo = {
     primary: true,
     darkText: true,
     ButtonPath: "infocontenttwo",
+    dataAos: "zoom-in",
+    dataAosTwo: "zoom-in-right",
+    dataAosImg: "flip-down"
 }
 export const homeObjThree = {
     id: "services",
