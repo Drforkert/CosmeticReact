@@ -35,7 +35,7 @@ position: absolute;
 }
 `;
 export const Container = styled.div`
-height: 1100px;
+height: 1300px;
 position: absolute;
 bottom: 0;
 left: 0;
@@ -128,7 +128,7 @@ box-shadow: 7px 7px 60px #000;
 @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     width: 100%;
     margin-bottom: 1rem;
     padding: 0; 
