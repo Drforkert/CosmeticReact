@@ -128,7 +128,7 @@ box-shadow: 7px 7px 60px #000;
 @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 300px;
     width: 100%;
     margin-bottom: 1rem;
     padding: 0; 
