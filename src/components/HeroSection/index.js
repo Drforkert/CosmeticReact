@@ -8,7 +8,9 @@ import "aos/dist/aos.css";
 const HeroSection = () => {
 
   useEffect(() => {
-    Aos.init({})
+    Aos.init({ duration: 2000,
+               delay: 0,
+               offset: 80})
   }, []);
 
     const [hover, setHover] = useState(false)
@@ -23,8 +25,8 @@ const HeroSection = () => {
            <Img src="https://images.pexels.com/photos/4620874/pexels-photo-4620874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="home" />
           </HeroBg>
           <HeroContent>
-           <HeroH1 data-aos="zoom-in-left">Sandra Kamin Kosmetik</HeroH1>
-           <HeroP data-aos="zoom-in-right">Schau dich gern um !
+           <HeroH1 data-aos="fade-up" data-aos-duration="1500">Sandra Kamin Kosmetik</HeroH1>
+           <HeroP data-aos="fade-down" data-aos-duration="3500">Schau dich gern um !
            </HeroP>
            <HeroBtnWrapper>
             <Button to="about" smooth={true} duration={800} spy={true}
