@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const HeroContainer = styled.div`
@@ -78,26 +78,26 @@ flex-direction: column;
 align-items: center;
 `;
 
-export const moveToLeft = keyframes`
-0% {
-    transform: translateX(20px);
-    opacity: 0;
-}
-100% {
-    transform: translateX(0);
-    opacity: 1;
-}
-`;
-export const moveToRight = keyframes`
-0% {
-    transform: translateX(-20px);
-    opacity: 0;
-}
-100% {
-    transform: translateX(0);
-    opacity: 1;
-}
-`;
+// export const moveToLeft = keyframes`
+// 0% {
+//     transform: translateX(20px);
+//     opacity: 0;
+// }
+// 100% {
+//     transform: translateX(0);
+//     opacity: 1;
+// }
+// `;
+// export const moveToRight = keyframes`
+// 0% {
+//     transform: translateX(-20px);
+//     opacity: 0;
+// }
+// 100% {
+//     transform: translateX(0);
+//     opacity: 1;
+// }
+// `;
 
 
 export const HeroH1 = styled.h1`
@@ -105,7 +105,6 @@ color: #fff;
 font-family: 'Damion';
 font-size: 4rem;
 text-align: center;
-animation: ${moveToLeft} 2s;
 overflow: hidden;
 position: relative;
 
@@ -119,7 +118,6 @@ position: relative;
 
 export const HeroP = styled.p`
 margin-top: 24px;
-animation: ${moveToRight} 2s;
 color: #fff;
 font-size: 1.5rem;
 text-align: center;

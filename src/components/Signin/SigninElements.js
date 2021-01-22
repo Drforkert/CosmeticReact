@@ -48,6 +48,9 @@ overflow: hidden;
 @media screen and (max-width: 360px){
     height: 1200px;
 }
+@media screen and (min-width: 768px) {
+    height: 100vh;
+}
 @media screen and (min-width: 1100px) {
     height:100vh;
 }
