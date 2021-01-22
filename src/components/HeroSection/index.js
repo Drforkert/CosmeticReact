@@ -23,8 +23,8 @@ const HeroSection = () => {
            <Img src="https://images.pexels.com/photos/4620874/pexels-photo-4620874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="home" />
           </HeroBg>
           <HeroContent>
-           <HeroH1 data-aos="fade-left">Sandra Kamin Kosmetik</HeroH1>
-           <HeroP data-aos="fade-right">Schau dich gern um !
+           <HeroH1 data-aos="zoom-in-left">Sandra Kamin Kosmetik</HeroH1>
+           <HeroP data-aos="zoom-in-right">Schau dich gern um !
            </HeroP>
            <HeroBtnWrapper>
             <Button to="about" smooth={true} duration={800} spy={true}
