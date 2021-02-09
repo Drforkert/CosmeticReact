@@ -14,9 +14,11 @@ export const InfoSectionAnim = keyframes`
 `;
 export const Price = styled.p`
 font-size: 2.5rem;
+margin-top: 2rem;
+text-align: left;
 display: flex;
 font-family: 'Damion';
-justify-content: center;
+justify-content: flex-start;
 color: #bc4e9c;
 
 @media screen and (max-width: 768px) {

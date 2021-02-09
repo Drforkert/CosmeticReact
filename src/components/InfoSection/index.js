@@ -21,8 +21,9 @@ const InfoSection = ({price, lightBg, id, imgStart, topLine, lightText, dataAos,
                <TextWrapper>
                 <TopLine data-aos={dataAos}>{topLine}</TopLine>
                 <Heading lightText={lightText} data-aos={dataAos}>{headline}</Heading>
-                <Subtitle darkText={darkText} data-aos={dataAosTwo}>{description}</Subtitle>
+                <Subtitle darkText={darkText} data-aos={dataAosTwo}>{description}
                 <Price>{price}</Price>
+                </Subtitle>
                 <BtnWrap>
                  <Button to={ButtonPath} exact
                  spy="true"
