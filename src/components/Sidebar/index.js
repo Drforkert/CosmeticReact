@@ -12,18 +12,21 @@ const Sidebar = ( {toggle, isOpen} ) => {
              <SidebarLink to="about" onClick={toggle}>
                Über Uns              
              </SidebarLink>
-             <SidebarLink to="discover" onClick={toggle}>
-               Entdecke..              
+             <SidebarLink to="classic" onClick={toggle}>
+               Classic              
              </SidebarLink> 
-             <SidebarLink to="services" onClick={toggle}>
-               Spezial              
+             <SidebarLink to="clean" onClick={toggle}>
+               Clean              
              </SidebarLink> 
-             <SidebarLink to="massage" onClick={toggle}>
-               Klick mich!              
+             <SidebarLink to="comfort" onClick={toggle}>
+               Comfort              
              </SidebarLink>
-             <SidebarLink to="offers" onClick={toggle}>
-               Alle Services              
+             <SidebarLink to="exklusiv" onClick={toggle}>
+               Exklusiv              
              </SidebarLink>         
+             <SidebarLink to="diamant" onClick={toggle}>
+               Diamant              
+             </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
               <SidebarRoute to="/signin">Kontakt</SidebarRoute>  

@@ -38,21 +38,25 @@ const Navbar = ({ toggle }) => {
                 exact='true' offset={-80} activeClass="active">Über uns</NavLinks>              
               </NavItem>
               <NavItem>
-                <NavLinks to="discover" smooth={true} duration={800} spy={true}
-                exact='true' offset={-80} activeClass="active">MakeUp..</NavLinks>              
+                <NavLinks to="classic" smooth={true} duration={800} spy={true}
+                exact='true' offset={-80} activeClass="active">Classic</NavLinks>              
               </NavItem>
               <NavItem>
-                <NavLinks to="services" smooth={true} duration={800} spy={true}
-                exact='true' offset={-80} activeClass="active">Spezial</NavLinks>              
+                <NavLinks to="clean" smooth={true} duration={800} spy={true}
+                exact='true' offset={-80} activeClass="active">Clean</NavLinks>              
               </NavItem>
               <NavItem>
-                <NavLinks to="massage" smooth={true} duration={800} spy={true}
-                exact='true' offset={-80} activeClass="active">Wimpern</NavLinks>              
+                <NavLinks to="comfort" smooth={true} duration={800} spy={true}
+                exact='true' offset={-80} activeClass="active">Comfort</NavLinks>              
               </NavItem>
               <NavItem>
-                <NavLinks to="offers" smooth={true} offset={-80} duration={800} spy={true}
-                exact='true' activeClass="active">Überblick</NavLinks>              
+                <NavLinks to="exklusiv" smooth={true} offset={-80} duration={800} spy={true}
+                exact='true' activeClass="active">Exklusiv</NavLinks>              
               </NavItem>            
+              <NavItem>
+                <NavLinks to="diamant" smooth={true} offset={-80} duration={800} spy={true}
+                exact='true' activeClass="active">Diamant</NavLinks>              
+              </NavItem>
              </NavMenu>
              <NavBtn>
               <NavBtnLink to='signin'>Kontaktiere uns!</NavBtnLink>           

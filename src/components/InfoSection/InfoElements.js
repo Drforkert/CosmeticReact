@@ -12,7 +12,13 @@ export const InfoSectionAnim = keyframes`
     background-position: 0 50%;
 }
 `;
-
+export const Price = styled.p`
+font-size: 2.5rem;
+display: flex;
+font-family: 'Damion';
+justify-content: center;
+color: #bc4e9c;
+`;
 
 export const InfoContainer = styled.div`
 color: #fff;
@@ -80,8 +86,8 @@ padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
-color: white;
-font-size: 1.1rem;
+color: #bc4e9c;
+font-size: 1.3rem;
 line-height: 1rem;
 font-weight: 700;
 letter-spacing: 1.4px;
