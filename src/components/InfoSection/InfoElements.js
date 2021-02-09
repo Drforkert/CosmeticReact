@@ -18,6 +18,13 @@ display: flex;
 font-family: 'Damion';
 justify-content: center;
 color: #bc4e9c;
+
+@media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
 `;
 
 export const InfoContainer = styled.div`
@@ -88,7 +95,7 @@ padding-bottom: 60px;
 export const TopLine = styled.p`
 color: #bc4e9c;
 font-size: 1.3rem;
-line-height: 1rem;
+line-height: 1.2rem;
 font-weight: 700;
 letter-spacing: 1.4px;
 text-transform: uppercase;
@@ -133,6 +140,6 @@ border: 4px solid white;
 box-shadow: 4px 4px 40px ${({lightBg}) => (lightBg ? '#fff' : '#000')};
 
 @media screen and (max-width: 768px) {
-    max-height: 400px;
+    max-height: 300px;
 }
 `;
